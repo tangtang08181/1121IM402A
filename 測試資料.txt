@@ -1,0 +1,31 @@
+data後面的數字代表fraudTest對應的交易資料
+
+data11666 = {
+    'amt': [790.54],
+    'lat': [42.52],
+    'long': [-78.6847],
+    'city_pop': [7728],
+    'hour': [22],
+    'minute': [3],
+    'second': [0],
+    'year': [2020],
+    'month': [6],
+    'day': [24],
+}
+fraud應為1
+
+
+
+data11688 = {
+    'amt': [93.48],
+    'lat': [31.8092],
+    'long': [-106.4247],
+    'city_pop': [749635],
+    'hour': [22],
+    'minute': [18],
+    'second': [0],
+    'year': [2020],
+    'month': [6],
+    'day': [24],
+}
+fraud應為0

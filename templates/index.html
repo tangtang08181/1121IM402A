@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+</head>
+<body>
+    <h1>Fraud Detection</h1>
+
+    <form method="post" action="/">
+        <label for="amt">Amount:</label>
+        <input type="text" name="amt" required><br>
+
+        <label for="lat">Latitude:</label>
+        <input type="text" name="lat" required><br>
+
+        <label for="long">Longitude:</label>
+        <input type="text" name="long" required><br>
+
+        <label for="city_pop">City Population:</label>
+        <input type="text" name="city_pop" required><br>
+
+        <label for="hour">Hour:</label>
+        <input type="text" name="hour" required><br>
+
+        <label for="minute">Minute:</label>
+        <input type="text" name="minute" required><br>
+
+        <label for="second">Second:</label>
+        <input type="text" name="second" required><br>
+
+        <label for="year">Year:</label>
+        <input type="text" name="year" required><br>
+
+        <label for="month">Month:</label>
+        <input type="text" name="month" required><br>
+
+        <label for="day">Day:</label>
+        <input type="text" name="day" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction is not none %}
+        <p>Prediction: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
